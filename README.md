@@ -4,7 +4,7 @@
 
 ## Document
 
-[在线文档](https://xairFE.github.io/xa-components)
+[在线文档](https://xairFE.github.io/xa-components/docs)
 
 ## Install
 
