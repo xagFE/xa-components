@@ -22,7 +22,16 @@ var webpackConfig = merge(baseWebpackConfig, {
   output: {
     path: config.build.assetsRoot,
     filename: 'xa-components.js',
-    library: 'XaComponents'
+    library: 'XaComponents',
+    libraryTarget: 'umd'
+  },
+  externals: {
+    vue: {
+      root: 'Vue',
+      commonjs2: 'vue',
+      amd: 'vue',
+      commonjs: 'vue'
+    }
   },
   plugins: [
     // http://vuejs.github.io/vue-loader/en/workflow/production.html
