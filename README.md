@@ -2,6 +2,10 @@
 
 > 基于Vuejs 2.0的常用组件库
 
+## Document
+
+[在线文档](https://xairFE.github.io/xa-components)
+
 ## Install
 
 ```bash
