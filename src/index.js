@@ -14,3 +14,6 @@ export default {
   version: '0.1.3',
   install
 }
+export {
+  install
+}
