@@ -9,7 +9,7 @@
 ## Install
 
 ```bash
-npm install xa-components -save
+npm install --save xa-components
 ```
 
 ## Get Started
