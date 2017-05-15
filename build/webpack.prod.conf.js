@@ -8,8 +8,14 @@ var baseWebpackConfig = require('./webpack.base.conf')
 // var HtmlWebpackPlugin = require('html-webpack-plugin')
 var ExtractTextPlugin = require('extract-text-webpack-plugin')
 var OptimizeCSSPlugin = require('optimize-css-assets-webpack-plugin')
+var packageJson = require('../package.json')
 
 var env = config.build.env
+
+var banner =
+`/*!
+  * xa-components v${ packageJson.version } (https://github.com/xairFE/xa-components)
+  */`
 
 var webpackConfig = merge(baseWebpackConfig, {
   module: {
@@ -21,7 +27,7 @@ var webpackConfig = merge(baseWebpackConfig, {
   devtool: config.build.productionSourceMap ? '#source-map' : false,
   output: {
     path: config.build.assetsRoot,
-    filename: 'xa-components.js',
+    filename: 'index.js',
     library: 'XaComponents',
     libraryTarget: 'umd'
   },
@@ -46,7 +52,7 @@ var webpackConfig = merge(baseWebpackConfig, {
     }),
     // extract css into its own file
     new ExtractTextPlugin({
-      filename: utils.assetsPath('xa-components.css')
+      filename: utils.assetsPath('index.css')
     }),
     // Compress extracted CSS. We are using this plugin so that possible
     // duplicated CSS from different components can be deduped.
@@ -54,7 +60,8 @@ var webpackConfig = merge(baseWebpackConfig, {
       cssProcessorOptions: {
         safe: true
       }
-    })
+    }),
+    new webpack.BannerPlugin({banner: banner, raw: true, entryOnly: true})
   ]
 })
 
