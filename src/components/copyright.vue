@@ -1,5 +1,5 @@
 <template>
-  <div class="xa-copyright">@copyright 2007-{{ thisYear }}</div>
+  <div class="xa-copyright">Copyright &copy; {{ thisYear }}</div>
 </template>
 
 <script>

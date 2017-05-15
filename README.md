@@ -17,7 +17,7 @@ npm install --save xa-components
 ```javascript
 import Vue from 'vue'
 import XaComponents from 'xa-components'
-import 'xa-components/dist/xa-components.css'
+import 'xa-components/dist/index.css'
 Vue.use(XaComponents)
 ```
 
