@@ -1,6 +1,6 @@
 <template>
 <div class="preloader-wrapper active" :style="{'width': size + 'px', 'height': size + 'px'}">
-  <div class="spinner active" :class="['spinner-' + color]">
+  <div class="spinner active" :style="{borderColor: color}">
       <div class="circle-clipper left">
           <div class="circle" :style="{'border-width': borderWidth + 'px'}"></div>
       </div>
@@ -23,7 +23,7 @@ export default {
     },
     color: {
       type: String,
-      default: ''
+      default: 'red'
     },
     borderWidth: {
       type: Number,
@@ -69,24 +69,6 @@ export default {
   opacity: 1;
   -webkit-animation: fill-unfill-rotate 5332ms cubic-bezier(0.4, 0, 0.2, 1) infinite both;
   animation: fill-unfill-rotate 5332ms cubic-bezier(0.4, 0, 0.2, 1) infinite both;
-}
-
-.spinner-white{
-  border-color: #FFF;
-}
-
-.spinner-red{
-  border-color: #FF2C4F;
-}
-.spinner-green{
-  border-color: green;
-}
-
-.spinner-gray{
-  border-color:#888;
-}
-.spinner-blue{
-  border-color: blue;
 }
 
 .circle-clipper {

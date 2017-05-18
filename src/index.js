@@ -5,6 +5,8 @@ import xaPopup from './components/popup'
 import { cells as xaCells, cell as xaCell } from './components/cells'
 import xaRipple from './components/ripple'
 import xaCircular from './components/circular'
+import xaTab from './components/tab'
+import { button as xaButton, buttons as xaButtons } from './components/buttons'
 
 import toast from './components/toast'
 
@@ -14,7 +16,10 @@ const components = {
   xaCells,
   xaCell,
   xaRipple,
-  xaCircular
+  xaCircular,
+  xaTab,
+  xaButton,
+  xaButtons
 }
 
 const install = (Vue, option) => {

@@ -1,5 +1,5 @@
 <template>
-  <div class="form-cell xa-webkit-box">
+  <div @click="onItemClick" class="form-cell xa-webkit-box">
       <div class="form-cell-hd">{{ title }}<slot name="title"></slot></div>
       <div class="form-cell-bd xa-flex" :class="{'xa-arrow':arrow,'xa-txt-right':right}">{{ desc }}<slot name="desc"></slot></div>
   </div>
@@ -11,7 +11,18 @@ export default {
     arrow: Boolean,
     right: Boolean,
     title: String,
-    desc: String
+    desc: String,
+    link: [String, Object]
+  },
+  methods: {
+    onItemClick () {
+      if (!this.link) return
+      if (this.$router) {
+        this.$router.push(this.link)
+      } else if (typeof this.link === 'string') {
+        window.location.href = this.link
+      }
+    }
   }
 }
 </script>

@@ -1,8 +1,6 @@
 <template>
   <xa-cells class="border-top">
-      <router-link :to="{name:item.name}" v-for="(item,ix) in routes" key="name">
-        <xa-cell :title="item.name" right arrow></xa-cell>
-      </router-link>
+      <xa-cell v-for="(item,ix) in routes" key="name" :link="{name:item.name}" :title="item.name" right arrow></xa-cell>
   </xa-cells>
 </template>
 

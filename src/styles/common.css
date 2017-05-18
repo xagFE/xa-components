@@ -6,16 +6,53 @@ a{color:inherit;text-decoration:none;}
 .xa-webkit-box-vertical{flex-direction:column;}
 .xa-webkit-center{display:-webkit-box;display:flex;-webkit-box-pack:center;justify-content:center;-webkit-box-align:center;align-items:center;}
 .xa-flex{-webkit-box-flex:1;flex:1;}
-.xa-txt-ellipsis{overflow: hidden;text-overflow:ellipsis;display:-webkit-box;-webkit-box-orient: vertical;-webkit-line-clamp:1;}
-.xa-txt-ellipsis-2{overflow: hidden;text-overflow:ellipsis;display:-webkit-box;-webkit-box-orient: vertical;-webkit-line-clamp:2;}
+
+
+
+
+.xa-txt-ellipsis{overflow:hidden;white-space:nowrap;text-overflow:ellipsis;}
+.xa-txt-ellipsis-1{overflow:hidden;text-overflow:ellipsis;display:-webkit-box;-webkit-box-orient:vertical;-webkit-line-clamp:1 !important;}
+.xa-txt-ellipsis-2{overflow:hidden;text-overflow:ellipsis;display:-webkit-box;-webkit-box-orient:vertical;-webkit-line-clamp:2 !important;}
+.xa-txt-left{text-align:left;}
 .xa-txt-right{text-align:right;}
+.xa-txt-center{text-align:center;}
 .xa-txt-through{text-decoration:line-through;}
-.xa-txt-12{font-size:12px;}
-.xa-txt-14{font-size:14px;}
 .xa-txt-bold{font-weight:bold;}
+
+.xa-txt-red{color:#FF2C4F;}
+.xa-txt-orange{color:#FF9900;}
+.xa-txt-yellow{color:yellow;}
+.xa-txt-green{color:#0A9A35;}
+.xa-txt-blue{color:#268dff;}
+.xa-txt-gray{color:gray;}
+.xa-txt-white{color:white;}
+.xa-txt-black{color:black;}
+
+.xa-txt-555{color:#555;}
 .xa-txt-999{color:#999;}
-.xa-txt-green{color:#67BD59;}
+.xa-txt-aaa{color:#aaa;}
+.xa-txt-ccc{color:#ccc;}
+.xa-txt-eee{color:#eee;}
 .xa-txt-12-999{font-size:12px;color:#999;}
+
+.xa-txt-12{font-size:12px !important;}
+.xa-txt-14{font-size:14px !important;}
+.xa-txt-16{font-size:16px !important;}
+.xa-txt-18{font-size:18px !important;}
+.xa-txt-20{font-size:20px !important;}
+.xa-txt-22{font-size:22px !important;}
+.xa-txt-24{font-size:24px !important;}
+
+.xa-bg-image{background-size:cover;background-repeat:no-repeat;background-position:center;}
+.xa-bg-eee{background:#eee;}
+.xa-bg-red{background-color:#FF2C4F;color:white;}
+.xa-bg-orange{background-color:#FA9E3B;color:white;}
+.xa-bg-yellow{background-color:#fff600;color:white;}
+.xa-bg-green{background-color:#38BD60;color:white;}
+.xa-bg-blue{background-color:#268dff;color:white;}
+.xa-bg-gray{background-color:#BCBCBC;}
+.xa-bg-white{background-color:white;}
+.xa-bg-black{background-color:black;color:white;}
 
 .xa-arrow{color:#666;}
 .xa-arrow.white:after{border-top-color:white;border-right-color:white;}
@@ -45,3 +82,9 @@ a{color:inherit;text-decoration:none;}
 .form-tip .weui_icon_info:before{color:#ccc;font-size:15px;vertical-align:text-bottom;margin-right:3px;}
 
 .xa-input{appearance: none;}
+
+.xa-buttons{}
+.xa-buttons.padding{padding:5px 14px;}
+.xa-button{position:relative;display:inline-block;padding:9px 14px;line-height:24px;font-size:14px;text-align:center;overflow:hidden;}
+.xa-button.radius{margin:5px 10px;}
+.xa-buttons.padding .xa-button + .xa-button{margin-left:10px;}

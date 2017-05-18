@@ -6,6 +6,7 @@ import cells from '@/components/cells'
 import ripple from '@/components/ripple'
 import circular from '@/components/circular'
 import toast from '@/components/toast'
+import tab from '@/components/tab'
 
 Vue.use(Router)
 
@@ -39,6 +40,16 @@ export const routes = [
     path: '/toast',
     name: 'toast',
     component: toast
+  },
+  {
+    path: '/tab',
+    name: 'tab',
+    component: tab
+  },
+  {
+    path: '/buttons',
+    name: 'buttons',
+    component: require('@/components/buttons')
   }
 ]
 
