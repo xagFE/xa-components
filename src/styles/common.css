@@ -2,13 +2,10 @@ html{box-sizing:border-box;line-height:24px;}
 *{box-sizing:inherit;-webkit-tap-highlight-color:transparent;}
 *,*::before,*::after{box-sizing:inherit;}
 a{color:inherit;text-decoration:none;}
-.xa-webkit-box,.xa-webkit-box-vertical{display:flex;}
-.xa-webkit-box-vertical{flex-direction:column;}
+.xa-webkit-box,.xa-webkit-box-vertical{display:-webkit-box;display:-ms-flexbox;display:flex;}
+.xa-webkit-box-vertical{-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column;}
 .xa-webkit-center{display:-webkit-box;display:flex;-webkit-box-pack:center;justify-content:center;-webkit-box-align:center;align-items:center;}
 .xa-flex{-webkit-box-flex:1;flex:1;}
-
-
-
 
 .xa-txt-ellipsis{overflow:hidden;white-space:nowrap;text-overflow:ellipsis;}
 .xa-txt-ellipsis-1{overflow:hidden;text-overflow:ellipsis;display:-webkit-box;-webkit-box-orient:vertical;-webkit-line-clamp:1 !important;}
