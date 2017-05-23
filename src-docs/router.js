@@ -50,6 +50,16 @@ export const routes = [
     path: '/buttons',
     name: 'buttons',
     component: require('@/components/buttons')
+  },
+  {
+    path: '/infiniteScroll',
+    name: 'infiniteScroll',
+    component: require('@/components/infiniteScroll')
+  },
+  {
+    path: '/refreshControl',
+    name: 'refreshControl',
+    component: require('@/components/refreshControl')
   }
 ]
 

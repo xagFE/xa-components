@@ -7,6 +7,8 @@ import xaRipple from './components/ripple'
 import xaCircular from './components/circular'
 import xaTab from './components/tab'
 import { button as xaButton, buttons as xaButtons } from './components/buttons'
+import xaInfiniteScroll from './components/infiniteScroll'
+import xaRefreshControl from './components/refreshControl'
 
 import toast from './components/toast'
 
@@ -19,7 +21,9 @@ const components = {
   xaCircular,
   xaTab,
   xaButton,
-  xaButtons
+  xaButtons,
+  xaInfiniteScroll,
+  xaRefreshControl
 }
 
 const install = (Vue, option) => {

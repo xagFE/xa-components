@@ -67,6 +67,7 @@ export default {
   opacity: 0;
   border-color: #FF2C4F;
   opacity: 1;
+  transition: border-color 0.6666s;
   -webkit-animation: fill-unfill-rotate 5332ms cubic-bezier(0.4, 0, 0.2, 1) infinite both;
   animation: fill-unfill-rotate 5332ms cubic-bezier(0.4, 0, 0.2, 1) infinite both;
 }
