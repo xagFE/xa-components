@@ -6,6 +6,7 @@
       :key="index"
       :class="[item.class || 'xa-bg-green',item.width ? '' : 'xa-flex']"
       :event="item.event"
+      :color="item.color"
       :ripple="item.ripple"
       :width="item.width || defaultWidth"
       :radius="radius">{{ item.text }}</xa-button>

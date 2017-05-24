@@ -15,6 +15,7 @@ const LENGTH = 130 // 下拉最大长度
 const INITY = -68  // 初始化Y轴位置
 const VALID = 130  // 有效下拉距离
 export default {
+  components: { circular },
   props: {
     refreshing: {
       type: Boolean,
@@ -33,7 +34,7 @@ export default {
       trigger: null,
       number: 0,
       timer: 0,
-      circularColor: this.initColor
+      circularColor: this.color[0] || this.color || ''
     }
   },
   computed: {
@@ -91,9 +92,6 @@ export default {
   mounted () {
     this.trigger = this.$el.parentNode
     this.bindDrag()
-  },
-  beforeDestory () {
-    this.unbindDrag()
   },
   methods: {
     clearState () {
@@ -197,7 +195,10 @@ export default {
       this.bindDrag()
     }
   },
-  components: { circular }
+  beforeDestroy () {
+    this.clearAutoChangeColor()
+    this.unbindDrag()
+  }
 }
 </script>
 

@@ -1,8 +1,16 @@
 <template>
-  <div style="height:300px;border:1px solid #ccc;overflow:auto;">
-    <div v-for="item in items">项目{{item}}</div>
+<div>
+  <div style="height:250px;border:1px solid #ccc;overflow:auto;">
+    <div v-for="item in items">无限滚动{{item}}</div>
     <xa-infinite-scroll @load="onLoadMore" :loading="isLoading" :end="isEnd" :end-text="endText" />
   </div>
+  <br>
+  分页大小 ： {{ psize }}
+  <br>
+  <label><input v-model.number="dataLength" :value="psize" type="radio" name="dataLength">模拟加载{{ psize }}条数据</label> <br>
+  <label><input v-model.number="dataLength" value="12" type="radio" name="dataLength">模拟加载12条数据(加载结束)</label> <br>
+   
+</div>
 </template>
 
 <script>
@@ -14,7 +22,8 @@ export default {
       isEnd: false,
       endText: '暂无更多',
       p: 1,
-      psize: 20
+      psize: 20,
+      dataLength: 20
     }
   },
   methods: {
@@ -22,7 +31,7 @@ export default {
       this.isLoading = true
       console.log(`加载第${this.p}页数据`)
       setTimeout(() => {
-        const data = Math.random() > 0.4 ? this.psize : 12  // 模拟加载数据, 每次40%概率加载完毕
+        const data = this.dataLength
         this.isLoading = false
         this.items += data
         this.endText = this.items === 0 ? '暂无数据' : `共${this.items}条数据`
@@ -32,7 +41,6 @@ export default {
     }
   },
   created () {
-    console.log('模拟加载数据, 每次40%概率加载完毕，若第一次加载完毕请刷新')
     this.onLoadMore()
   }
 }

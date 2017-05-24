@@ -51,13 +51,15 @@ export default {
       if (this.model === undefined) {
         return this.value
       } else {
-        for (let i = 0; i < this.items.length; i++) {
-          if (this.value === this.items[i][this.model]) {
-            return i
+        let ix = -1
+        this.items.some((item, index) => {
+          if (this.value === item[this.model]) {
+            ix = index
+            return true
           }
-        }
+        })
+        return ix
       }
-      return -1
     },
     tabFlagStyle () {
       var width = 100 / this.items.length

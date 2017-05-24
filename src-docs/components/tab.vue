@@ -5,7 +5,7 @@
     
     <br>
     {{ query.select }}
-    <xa-tab v-model="query.select" model="val" :items="items" :line-height="option.height" :color="option.color"></xa-tab>
+    <xa-tab style="background-color:#f2f2f2;font-size:14px;" v-model="query.select" model="val" :items="items" :line-height="option.height" :color="option.color"></xa-tab>
     <br>
     height: <input type="range" min="1" max="6" v-model.number="option.height">{{ option.height +'px'}}<br>
     color: <input type="color" v-model="option.color">

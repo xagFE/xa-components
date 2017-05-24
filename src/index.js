@@ -9,6 +9,8 @@ import xaTab from './components/tab'
 import { button as xaButton, buttons as xaButtons } from './components/buttons'
 import xaInfiniteScroll from './components/infiniteScroll'
 import xaRefreshControl from './components/refreshControl'
+import xaPicker from './components/picker'
+import xaDatePicker from './components/datePicker'
 
 import toast from './components/toast'
 
@@ -23,7 +25,9 @@ const components = {
   xaButton,
   xaButtons,
   xaInfiniteScroll,
-  xaRefreshControl
+  xaRefreshControl,
+  xaPicker,
+  xaDatePicker
 }
 
 const install = (Vue, option) => {

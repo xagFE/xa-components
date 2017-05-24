@@ -21,6 +21,7 @@ export default {
     computedStyle () {
       return {
         width: this.width || '',
+        color: this.color || '',
         borderRadius: (this.radius || 0) + 'px'
       }
     }
@@ -44,7 +45,8 @@ export default {
     ripple: {
       type: String
     },
-    event: String
+    event: String,
+    color: String
   }
 }
 </script>
