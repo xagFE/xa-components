@@ -2,17 +2,12 @@
   <div @click="showSlide" class="date-picker">
     <span class="xa-arrow">{{defaultText}}</span>
     <popup v-model="isShowSlide" from="bottom">
-      <div v-if="title" style="text-align:center;color:#333;font-size:14px;font-weight:bold;margin-top:10px;">{{ title }}</div>
-      <div class="picker-container xa-webkit-box">
-        <div class="xa-flex">
-          <picker :show="isShowSlide" v-model="date" :items="modelDate"></picker>
-        </div>
-        <div class="xa-flex">
-          <picker :show="isShowSlide" v-model="time" :items="modelTime"></picker>
-        </div>
+      <div v-if="title" class="date-picker-title">{{ title }}</div>
+      <div class="date-picker-container xa-webkit-box">
+        <picker class="xa-flex" :show="isShowSlide" v-model="date" :items="modelDate"></picker>
+        <picker class="xa-flex" :show="isShowSlide" v-model="time" :items="modelTime"></picker>
       </div>
-      <buttons @oncancel="onBtnCancel" @onconfirm="onBtnConfirm" :items="buttons" style="border-top:1px solid #f2f2f2;">
-      </buttons>
+      <buttons @oncancel="onBtnCancel" @onconfirm="onBtnConfirm" :items="buttons" style="border-top:1px solid #f2f2f2;"></buttons>
     </popup>
   </div>
 </template>
@@ -104,7 +99,8 @@ export default {
 </script>
 
 <style scoped>
-.picker-container {
+.date-picker-title{text-align:center;color:#333;font-size:14px;font-weight:bold;margin-top:10px;}
+.date-picker-container {
   position: relative;
   padding: 10px 20px;
 }

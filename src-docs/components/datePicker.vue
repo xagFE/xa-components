@@ -8,6 +8,8 @@
           </span>
       </xa-cell>
     </xa-cells>
+    <button @click="clearDiv" style="position:fixed;top:100px;left:100px;z-index:100">清空</button>
+    <div id="abcd"></div>
   </div>
 </template>
 <script>
@@ -15,6 +17,11 @@ export default {
   data () {
     return {
       datetime: ''
+    }
+  },
+  methods: {
+    clearDiv () {
+      document.getElementById('abcd').innerHTML = ''
     }
   }
 }
