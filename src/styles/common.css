@@ -1,5 +1,5 @@
 html{box-sizing:border-box;line-height:24px;}
-*{box-sizing:inherit;-webkit-tap-highlight-color:transparent;}
+*{box-sizing:inherit;-webkit-tap-highlight-color:transparent;-webkit-overflow-scrolling:touch;}
 *,*::before,*::after{box-sizing:inherit;}
 a{color:inherit;text-decoration:none;}
 .xa-webkit-box,.xa-webkit-box-vertical{display:-webkit-box;display:-ms-flexbox;display:flex;}
