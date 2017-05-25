@@ -114,6 +114,15 @@ export const routes = [
       title: 'datePicker',
       desc: '时间选择器'
     }
+  },
+  {
+    path: '/input',
+    name: 'input',
+    component: require('@/components/input'),
+    meta: {
+      title: 'input',
+      desc: '输入框、表单'
+    }
   }
 ]
 

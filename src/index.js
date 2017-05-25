@@ -11,6 +11,7 @@ import xaInfiniteScroll from './components/infiniteScroll'
 import xaRefreshControl from './components/refreshControl'
 import xaPicker from './components/picker'
 import xaDatePicker from './components/datePicker'
+import xaInput from './components/input'
 
 import toast from './components/toast'
 
@@ -27,7 +28,8 @@ const components = {
   xaInfiniteScroll,
   xaRefreshControl,
   xaPicker,
-  xaDatePicker
+  xaDatePicker,
+  xaInput
 }
 
 const install = (Vue, option) => {

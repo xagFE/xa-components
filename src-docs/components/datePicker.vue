@@ -4,7 +4,7 @@
       <xa-cell right>
           <div slot="title">选择时间</div>
           <span slot="desc">
-            <xa-date-picker title="选择时间" v-model="datetime" text="请选择" />
+            <xa-date-picker arrow title="选择时间" v-model="datetime" text="请选择" />
           </span>
       </xa-cell>
     </xa-cells>

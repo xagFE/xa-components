@@ -1,6 +1,6 @@
 <template>
   <div class="xa-infinite-scroll">
-    <circular v-show="loading" :size="16" color="#999" :border-width="2"></circular>
+    <circular v-show="loading" :size="12" color="#999" :border-width="1"></circular>
     <span v-show="loading || end" class="xa-infinite-scroll-text" :style="{'margin-left': end ? '0' : '10px'}">{{ end ? '- '+endText+' -' : loadingText}}</span>
   </div>
 </template>
@@ -50,7 +50,7 @@ export default {
   width: 100%;
 }
 .xa-infinite-scroll-text{
-  font-size: 13px;
+  font-size: 10px;
   color: #666;
 }
 </style>

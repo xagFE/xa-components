@@ -1,6 +1,6 @@
 <template>
   <div @click="showSlide" class="date-picker">
-    <span class="xa-arrow">{{defaultText}}</span>
+    <span :class="{'xa-arrow': arrow}">{{defaultText}}</span>
     <popup v-model="isShowSlide" from="bottom">
       <div v-if="title" class="date-picker-title">{{ title }}</div>
       <div class="date-picker-container xa-webkit-box">
@@ -45,6 +45,8 @@ export default {
   props: {
     text: String,
     title: String,
+    right: Boolean,
+    arrow: Boolean,
     value: {
       type: String,
       required: true
