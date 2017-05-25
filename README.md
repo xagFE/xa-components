@@ -6,7 +6,7 @@
 
 [在线文档](https://xairFE.github.io/xa-components/docs)
 
-![preview qrcode](xa-components/src-docs/assets/logo.png)
+![preview qrcode](src-docs/assets/preview_qrcode.png)
 
 ## Install
 
