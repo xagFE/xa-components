@@ -50,7 +50,7 @@ export default {
   width: 100%;
 }
 .xa-infinite-scroll-text{
-  font-size: 10px;
+  font-size: 12px;
   color: #666;
 }
 </style>

@@ -29,7 +29,7 @@
         <textarea slot="desc" class="xa-textarea" rows="3" placeholder="请输入备注内容"></textarea>
       </xa-cell>
     </xa-cells>
-    <br><br><br><br><br>
+    <xa-button @on-click="onSubmit" style="width:100%;" class="xa-bg-green" ripple="rgba(255,255,255,0.3)">提交</xa-button>
   </div>
 </template>
 
@@ -41,6 +41,11 @@ export default {
       age: 20,
       time: '',
       time1: ''
+    }
+  },
+  methods: {
+    onSubmit () {
+      console.log('提交')
     }
   }
 }

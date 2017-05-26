@@ -1,6 +1,6 @@
 <template>
   <transition name="fade">
-    <div v-show="value" @click.stop="hideSide" class="popup-box" :class="{'xa-webkit-center': from==='center'}">
+    <div v-show="value" @click.stop="hideSide" class="popup-box">
       <transition name="slide">
         <div @click.stop="" v-show="value" :class="from" class="popup-container">
           <slot></slot>
@@ -37,7 +37,7 @@
 .popup-container.left{left:0;top:0;width:60%;height:100%;}
 .popup-container.top{left:0;top:0;width:100%;max-height:85%;}
 .popup-container.bottom{right:0;bottom:0;width:100%;max-height:85%;}
-.popup-container.center{max-height:85%;width:85%;left:7.5%;}
+.popup-container.center{max-height:85%;width:85%;left:50%;top:50%;transform:translate(-50%, -50%);}
 
 .fade-enter-active, .fade-leave-active {
   transition:opacity .3s ease;

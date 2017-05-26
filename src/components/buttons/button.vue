@@ -45,7 +45,10 @@ export default {
     ripple: {
       type: String
     },
-    event: String,
+    event: {
+      type: String,
+      default: 'on-click'
+    },
     color: String
   }
 }
