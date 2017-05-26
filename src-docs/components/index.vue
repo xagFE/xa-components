@@ -11,7 +11,9 @@ export default {
   data () {
     return {
       routes: routes.filter(item => {
-        return item.name !== 'index'
+        return item.name !== 'index' && item.name !== 'cells'
+      }).sort((a, b) => {
+        return a.name > b.name ? '1' : '-1'
       })
     }
   }

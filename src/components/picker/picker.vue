@@ -49,6 +49,7 @@ export default {
     onscroll () {
       this.clearTimer()
       this.timer = setTimeout(() => {
+        if (!this.$refs.list) return
         this.index = Math.round(this.$refs.list.scrollTop / 44)
       }, 100)
     },
