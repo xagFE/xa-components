@@ -37,7 +37,7 @@
 .popup-container.left{left:0;top:0;width:60%;height:100%;}
 .popup-container.top{left:0;top:0;width:100%;max-height:85%;}
 .popup-container.bottom{right:0;bottom:0;width:100%;max-height:85%;}
-.popup-container.center{max-height:85%;width:85%;left:50%;top:50%;transform:translate(-50%, -50%);}
+.popup-container.center{max-height:85%;width:85%;left:50%;top:50%;transform:translate(-50%, -50%) scale(1);}
 
 .fade-enter-active, .fade-leave-active {
   transition:opacity .3s ease;
@@ -65,7 +65,7 @@
   opacity:0;
 }
 .slide-enter.center, .slide-leave-active.center {
-  transform:scale(0);
+  transform:translate(-50%, -50%) scale(0);
   opacity:0;
 }
 </style>

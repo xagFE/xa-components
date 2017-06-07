@@ -6,6 +6,7 @@ a{color:inherit;text-decoration:none;}
 .xa-webkit-box-vertical{-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column;}
 .xa-webkit-center{display:-webkit-box;display:flex;-webkit-box-pack:center;justify-content:center;-webkit-box-align:center;align-items:center;}
 .xa-flex{-webkit-box-flex:1;flex:1;}
+.xa-hidden,.xa-hide{display:none;}
 
 .xa-txt-ellipsis{overflow:hidden;white-space:nowrap;text-overflow:ellipsis;}
 .xa-txt-ellipsis-1{overflow:hidden;text-overflow:ellipsis;display:-webkit-box;-webkit-box-orient:vertical;-webkit-line-clamp:1 !important;}

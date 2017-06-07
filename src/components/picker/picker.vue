@@ -103,7 +103,7 @@ export default {
 
 <style scoped>
   .picker-container{position:relative;}
-  .picker-items{overflow-y:auto;overflow-x:hidden;text-align:center;-webkit-mask:-webkit-linear-gradient(top,transparent,white,transparent);}
+  .picker-items{overflow-y:auto;overflow-x:hidden;text-align:center;-webkit-mask:linear-gradient(to bottom,transparent,white,transparent);}
   .picker-item{height:44px;line-height:24px;padding:10px 0;}
   .picker-item.current{font-weight:bold;color:#04BE02;}
   .picker-bar{position:absolute;height:44px;width:100%;pointer-events:none;border-top:2px solid #04BE02;border-bottom:2px solid #04BE02;}

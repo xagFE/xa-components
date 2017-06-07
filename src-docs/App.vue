@@ -23,12 +23,18 @@ html,body{margin:0;height:100%;}
   overflow:auto;
 }
 #app>.logo{
-  background-image:-webkit-linear-gradient(top,#35495E,#41B883);
+  background-image: linear-gradient(-45deg, #41B883 40%, white 50%, #41B883 60%);
+  background-color:#41B883;
+  background-repeat: no-repeat;
   -webkit-mask: url(./assets/logo.png) center/100%;
-  animation: updown infinite 8s ease-in-out;
-  animation-direction:alternate;
+  animation: updown infinite 5s linear;
 }
 @keyframes updown{
-  100%{background-position: 0 80px;}
+  0% {
+    background-position: -40px -40px;
+  }
+  100% {
+    background-position: 40px 40px;
+  }
 }
 </style>

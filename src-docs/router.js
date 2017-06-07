@@ -123,6 +123,22 @@ export const routes = [
       title: 'input',
       desc: '输入框、表单'
     }
+  },
+  {
+    path: '/tabBar',
+    name: 'tabBar',
+    component: require('@/components/tabBar'),
+    meta: {
+      title: 'tabBar'
+    }
+  },
+  {
+    path: '/radio',
+    name: 'radio',
+    component: require('@/components/radio'),
+    meta: {
+      title: 'radio'
+    }
   }
 ]
 

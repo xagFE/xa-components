@@ -135,7 +135,7 @@ export default {
     right: 0;
     bottom: 0;
     // Forces webkit to properly contain content within border-radius
-    -webkit-mask-image: -webkit-radial-gradient(circle, white, black);
+    -webkit-mask-image: radial-gradient(circle, white, black);
 }
 .xa-ripple-ink .ripple {
     position: absolute;
