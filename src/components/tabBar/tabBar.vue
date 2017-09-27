@@ -1,8 +1,8 @@
 <template>
   <div class="xa-tabbar xa-webkit-box">
-    <router-link v-for="item in items" key="item.link" :to="{path: item.link}" :replace="item.replace !== false" class="xa-tabbar-item" :class="{'read':item.unread && item.unread<0}" active-class="active">
+    <router-link v-for="item in items" :key="item.link" :to="{path: item.link}" :replace="item.replace !== false" class="xa-tabbar-item" :class="{'read':item.unread && item.unread<0}" active-class="active">
         <figure>
-        	<i class="iconfont xa-txt-20" :class="[item.default]"></i>
+        	<i class="iconfont" :style="{fontSize: iconSize + 'px'}" :class="[item.default]"></i>
           <figcaption class="figure-caption xa-txt-ellipsis">{{ item.text }}</figcaption>
         </figure>
 		    <div v-if="item.unread && item.unread>0" class="xa-tabbar-unread">{{item.unread}}</div>
@@ -17,13 +17,17 @@ export default {
   components: {ripple},
   props: {
     items: Array,
-    ripple: Boolean
+    ripple: Boolean,
+    iconSize: {
+      type: Number,
+      default: 20
+    }
   }
 }
 </script>
 
 <style scoped>
-.xa-tabbar{display:flex;border-top:1px solid #e4e4e4;position:relative;width:100%;}
+.xa-tabbar{display:flex;border-top:1px solid #e4e4e4;position:relative;width:100%;text-align:center;}
 .xa-tabbar-item{flex:1;position:relative;padding:4px 0 1px 0;color:#818a91;text-decoration:none;width:33.33%;display:block;}
 .xa-tabbar-item.active{color:#46B238;}
 .xa-tabbar-item figure{margin:0;}

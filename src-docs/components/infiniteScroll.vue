@@ -1,8 +1,8 @@
 <template>
 <div>
   <div style="height:250px;border:1px solid #ccc;overflow:auto;">
-    <div v-for="item in items">无限滚动{{item}}</div>
-    <xa-infinite-scroll @load="onLoadMore" :loading="isLoading" :end="isEnd" :end-text="endText" />
+    <div v-for="(item, index) in items" :key="index">无限滚动{{item}}</div>
+    <xa-infinite-scroll @load="onLoadMore" :loading="isLoading" :end="isEnd" :end-text="endText"></xa-infinite-scroll>
   </div>
   <br>
   分页大小 ： {{ psize }}

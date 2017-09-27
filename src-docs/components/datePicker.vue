@@ -3,7 +3,7 @@
     <xa-cells>
       <xa-cell right>
           <div slot="title">选择时间</div>
-          <span slot="desc">
+          <span>
             <xa-date-picker arrow title="选择时间" v-model="datetime" text="请选择" />
           </span>
       </xa-cell>

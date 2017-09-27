@@ -139,6 +139,14 @@ export const routes = [
     meta: {
       title: 'radio'
     }
+  },
+  {
+    path: '/search',
+    name: 'search',
+    component: require('@/components/search'),
+    meta: {
+      title: 'search'
+    }
   }
 ]
 

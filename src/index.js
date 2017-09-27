@@ -12,8 +12,11 @@ import xaRefreshControl from './components/refreshControl'
 import xaPicker from './components/picker'
 import xaDatePicker from './components/datePicker'
 import xaInput from './components/input'
+import xaSelect from './components/select'
 import xaTabBar from './components/tabBar'
 import xaRadio from './components/radio'
+import xaSearch from './components/search'
+import xaDropdown from './components/dropdown'
 
 import toast from './components/toast'
 
@@ -32,8 +35,11 @@ const components = {
   xaPicker,
   xaDatePicker,
   xaInput,
+  xaSelect,
   xaTabBar,
-  xaRadio
+  xaRadio,
+  xaSearch,
+  xaDropdown
 }
 
 const install = (Vue, option) => {
