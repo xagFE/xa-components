@@ -147,6 +147,15 @@ export const routes = [
     meta: {
       title: 'search'
     }
+  },
+  {
+    path: '/area',
+    name: 'area',
+    component: require('@/components/areaSelect'),
+    meta: {
+      title: 'areaSelect',
+      desc: '地区选择'
+    }
   }
 ]
 

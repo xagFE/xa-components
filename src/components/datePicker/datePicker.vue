@@ -3,7 +3,7 @@
     <span :class="{'xa-arrow': arrow}">{{defaultText}}</span>
     <popup v-model="isShowSlide" from="bottom">
       <div v-if="title" class="date-picker-title">{{ title }}</div>
-      <div class="date-picker-container xa-webkit-box">
+      <div class="date-picker-container xa-flex-box">
         <picker class="xa-flex" :show="isShowSlide" v-model="date" :items="modelDate"></picker>
         <picker class="xa-flex" :show="isShowSlide" v-model="time" :items="modelTime"></picker>
       </div>

@@ -1,5 +1,5 @@
 <template>
-  <div @click="onItemClick" class="form-cell xa-webkit-box" :class="{'xa-arrow': arrow}">
+  <div @click="onItemClick" class="form-cell xa-flex-box" :class="{'xa-arrow': arrow}">
       <div class="form-cell-hd" :class="{required: required}">{{ title }}<slot name="title"></slot></div>
       <div class="form-cell-bd xa-flex" :class="{'xa-txt-right':right}">{{ desc }}<slot></slot></div>
   </div>

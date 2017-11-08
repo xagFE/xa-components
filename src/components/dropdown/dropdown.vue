@@ -2,7 +2,7 @@
   <div class="dropdown-box">
     <div @click="isShowItems = !isShowItems" class="dropdown-title">{{ showText }}</div>
     <div v-show="isShowItems" class="dropdown-items">
-      <div @click="onItemClick(item)" v-for="item in items" class="dropdown-item xa-webkit-box">
+      <div @click="onItemClick(item)" v-for="item in items" class="dropdown-item xa-flex-box">
         <div class="xa-flex" :class="{'xa-txt-green': item.value === value}">{{ item.key }}</div>
         <div>
           <i v-show="item.value === value" class="weui_icon_success_no_circle"></i>

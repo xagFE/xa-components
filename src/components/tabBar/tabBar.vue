@@ -1,5 +1,5 @@
 <template>
-  <div class="xa-tabbar xa-webkit-box">
+  <div class="xa-tabbar xa-flex-box">
     <router-link v-for="item in items" :key="item.link" :to="{path: item.link}" :replace="item.replace !== false" class="xa-tabbar-item" :class="{'read':item.unread && item.unread<0}" active-class="active">
         <figure>
         	<i class="iconfont" :style="{fontSize: iconSize + 'px'}" :class="[item.default]"></i>

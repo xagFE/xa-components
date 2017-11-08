@@ -1,5 +1,5 @@
 <template>
-  <div :class="{padding:radius}" class="xa-buttons xa-webkit-box">
+  <div :class="{padding:radius}" class="xa-buttons xa-flex-box">
     <xa-button 
       @button-click-for-buttons="onBtnClick"
       v-for="(item,index) in items"

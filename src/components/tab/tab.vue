@@ -1,5 +1,5 @@
 <template>
-  <div class="xa-tabs xa-webkit-box">
+  <div class="xa-tabs xa-flex-box">
     <div v-for="(item,index) in items" @click="onItemClick(item,index)" :style="currentIndex === index ? {color: color} : ''" class="xa-tab xa-flex">{{ item.text }}</div>
     <div class="xa-tab-flag" :class="tabTagClass" :style="tabFlagStyle"></div>
   </div>

@@ -1,18 +1,16 @@
 <template>
   <div class="xa-infinite-scroll">
-    <circular v-show="loading" :size="12" color="#999" :border-width="1"></circular>
+    <span class="xa-weui-loading"></span>
     <span v-show="loading || end" class="xa-infinite-scroll-text" :style="{'margin-left': end ? '0' : '10px'}">{{ end ? '- '+endText+' -' : loadingText}}</span>
   </div>
 </template>
 
 <script>
-import circular from '../circular'
 import scrollMixin from '../../mixins/scroll.js'
 
 export default {
   name: 'infinite-scroll',
   mixins: [scrollMixin],
-  components: {circular},
   props: {
     loading: Boolean,
     loadingText: {

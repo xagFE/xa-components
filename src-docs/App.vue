@@ -23,18 +23,8 @@ html,body{margin:0;height:100%;}
   overflow:auto;
 }
 #app>.logo{
-  background-image: linear-gradient(-45deg, #41B883 40%, white 50%, #41B883 60%);
-  background-color:#41B883;
-  background-repeat: no-repeat;
+  background:linear-gradient(to right, #41B883 0px, #41B883 2px, transparent 2px, transparent 4px),linear-gradient(to bottom, #41B883 0px, #41B883 2px, transparent 2px, transparent 4px);
+  background-size:4px 2px, 2px 4px;
   -webkit-mask: url(./assets/logo.png) center/100%;
-  animation: updown infinite 5s linear;
-}
-@keyframes updown{
-  0% {
-    background-position: -40px -40px;
-  }
-  100% {
-    background-position: 40px 40px;
-  }
 }
 </style>

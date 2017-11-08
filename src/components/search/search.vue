@@ -41,6 +41,7 @@ export default {
     searchCancel () {
       this.$emit('input', '')
       this.isFocusing = false
+      this.$emit('search')
     },
     onSearch () {
       this.$emit('search')
@@ -149,13 +150,21 @@ export default {
   left: 10px;
   top: 0;
   line-height: 28px;
+  color:#aaa;
+  font-size: 18px;
 }
 .weui-search-bar__box .weui-icon-clear {
   position: absolute;
-  top: 0;
-  right: 0;
-  padding: 0 10px;
-  line-height: 28px;
+  height:20px;
+  width:20px;
+  top: 4px;
+  right: 4px;
+  text-align: center;
+  line-height: 21px;
+  border-radius: 50%;
+  font-size:18px;
+  background-color: #ccc;
+  color: #999;
 }
 .weui-search-bar__label {
   position: absolute;
@@ -175,7 +184,8 @@ export default {
   vertical-align: middle;
 }
 .weui-search-bar__label .weui-icon-search {
-  margin-right: 5px;
+  vertical-align: -2px;
+  font-size: 18px;
 }
 .weui-search-bar__cancel-btn {
   display: none;

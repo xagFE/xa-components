@@ -17,6 +17,7 @@ import xaTabBar from './components/tabBar'
 import xaRadio from './components/radio'
 import xaSearch from './components/search'
 import xaDropdown from './components/dropdown'
+import xaAreaSelect from './components/areaSelect'
 
 import toast from './components/toast'
 
@@ -39,7 +40,8 @@ const components = {
   xaTabBar,
   xaRadio,
   xaSearch,
-  xaDropdown
+  xaDropdown,
+  xaAreaSelect
 }
 
 const install = (Vue, option) => {
