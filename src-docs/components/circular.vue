@@ -1,10 +1,12 @@
 <template>
   <div>
-      <xa-circular :size="size" color="red" :border-width="borderWidth"></xa-circular>
+      <xa-circular :size="size" :color="color" :border-width="borderWidth"></xa-circular>
       <br>
-      size:<input type="range" :min="10" :max="100" v-model="size"> {{ size }}
+      size:<input type="range" :min="10" :max="100" v-model.number="size"> {{ size }}
       <br>
-      borderWidth:<input type="range" :min="1" :max="10" v-model="borderWidth"> {{ borderWidth }}
+      borderWidth:<input type="range" :min="1" :max="10" v-model.number="borderWidth"> {{ borderWidth }}
+      <br>
+      color: <input type="color" v-model="color">
   </div>
 </template>
 
@@ -13,7 +15,8 @@ export default {
   data () {
     return {
       size: 24,
-      borderWidth: 2
+      borderWidth: 2,
+      color: '#ff0000'
     }
   }
 }

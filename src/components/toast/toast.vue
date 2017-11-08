@@ -1,5 +1,5 @@
 <template>
-  <div class="xa-toast" :class="{'show':show }">
+  <div class="xa-toast" :class="{'show':show}">
     <div>{{ message }}</div>
   </div>
 </template>

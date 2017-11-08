@@ -1,8 +1,6 @@
 <template>
   <xa-cells class="border-top">
-      <router-link :to="{name:item.name}" v-for="(item,ix) in routes" key="name">
-        <xa-cell :title="item.name" right arrow></xa-cell>
-      </router-link>
+      <xa-cell v-for="(item,ix) in routes" key="name" :link="{name:item.name}" :title="item.name" :desc="item.meta.desc" right arrow></xa-cell>
   </xa-cells>
 </template>
 
@@ -13,7 +11,9 @@ export default {
   data () {
     return {
       routes: routes.filter(item => {
-        return item.name !== 'index'
+        return item.name !== 'index' && item.name !== 'cells'
+      }).sort((a, b) => {
+        return a.name > b.name ? '1' : '-1'
       })
     }
   }
