@@ -12,8 +12,10 @@
 </template>
 
 <script>
+import xaAreaSelect from 'xa-components/components/areaSelect'
 export default {
   name: 'area-select-demo',
+  components: {xaAreaSelect},
   data () {
     return {
       isShowPopup: false,
