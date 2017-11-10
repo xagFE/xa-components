@@ -23,10 +23,12 @@
       },
       width: String,
       height: String,
-      shadow: Boolean
+      shadow: Boolean,
+      preventHide: Boolean
     },
     methods: {
       hideSide () {
+        if (this.preventHide) return
         this.$emit('input', false)
       }
     }

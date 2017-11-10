@@ -26,6 +26,15 @@ export const routes = [
     }
   },
   {
+    path: '/popupBottom',
+    name: 'popupBottom',
+    component: require('@/components/popupBottom'),
+    meta: {
+      title: 'popupBottom',
+      desc: '底部弹出框'
+    }
+  },
+  {
     path: '/cells',
     name: 'cells',
     component: cells,
