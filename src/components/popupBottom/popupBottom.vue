@@ -73,9 +73,6 @@ export default {
   }
   .popup-bottom-content {
     padding: 0;
-    line-height: 20px;
-    font-size: 13px;
-    color: #666;
     overflow: auto;
     max-height: calc(85vh - 47px);
     background-color: #f2f2f2;
