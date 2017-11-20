@@ -1,6 +1,6 @@
 <template>
   <div class="xa-infinite-scroll">
-    <span class="xa-weui-loading"></span>
+    <span v-show="loading" class="xa-weui-loading"></span>
     <span v-show="loading || end" class="xa-infinite-scroll-text" :style="{'margin-left': end ? '0' : '10px'}">{{ end ? '- '+endText+' -' : loadingText}}</span>
   </div>
 </template>

@@ -2,12 +2,12 @@
   <div class="weui-search-bar" :class="{'weui-search-bar_focusing': isFocusing}">
     <form @click="searchClick" @submit.prevent="onSearch" class="weui-search-bar__form">
       <div class="weui-search-bar__box">
-        <i class="weui-icon-search">♞</i>
+        <i class="iconfont icon-search"></i>
         <input ref="search" type="search" :value="value" @input="onInput" @blur="onBlur" class="weui-search-bar__input" placeholder="搜索" required="">
         <a @click="searchClear" href="javascript:" class="weui-icon-clear">×</a>
       </div>
       <label class="weui-search-bar__label" style="transform-origin: 0px 0px 0px; opacity: 1; transform: scale(1, 1);">
-        <i class="weui-icon-search">♘</i>
+        <i class="iconfont icon-search"></i>
         <span>搜索</span>
       </label>
     </form>
@@ -145,7 +145,7 @@ export default {
 .weui-search-bar__box .weui-search-bar__input:focus {
   outline: none;
 }
-.weui-search-bar__box .weui-icon-search {
+.weui-search-bar__box .iconfont {
   position: absolute;
   left: 10px;
   top: 0;
@@ -183,7 +183,7 @@ export default {
   font-size: 14px;
   vertical-align: middle;
 }
-.weui-search-bar__label .weui-icon-search {
+.weui-search-bar__label .iconfont {
   vertical-align: -2px;
   font-size: 18px;
 }
