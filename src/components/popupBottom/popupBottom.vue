@@ -5,7 +5,7 @@
           <div v-if="subTitle" class="subtitle" :class="[red ? 'xa-txt-red' : '']">{{ subTitle }}</div>
       </div>
       <slot name="title"></slot>
-      <div class="popup-bottom-content">
+      <div class="popup-bottom-content" :class="{hasfooter: $slots.footer}">
           <slot></slot>
       </div>
       <slot name="footer"></slot>
@@ -63,6 +63,9 @@ export default {
       + .popup-bottom-content {
         max-height: calc(85vh - 53px);
       }
+      + .popup-bottom-content.hasfooter {
+        max-height: calc(85vh - 95px);
+      }
     }
     > .subtitle {
       font-size: 12px;
@@ -76,6 +79,9 @@ export default {
     overflow: auto;
     max-height: calc(85vh - 47px);
     background-color: #f2f2f2;
+    &.hasfooter {
+      max-height: calc(85vh - 89px);
+    }
   }
 }
 </style>

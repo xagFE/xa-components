@@ -4,7 +4,7 @@
       <div class="xa-bg-white">
         <div v-for="i in number">自定义内容</div>
       </div>
-      <xa-buttons @close="isShowPopup = false" :items="[{text: '确定'}, {text: '关闭', event: 'close', class: 'xa-bg-red'}]"></xa-buttons>
+      <xa-buttons slot="footer" @close="isShowPopup = false" :items="[{text: '确定'}, {text: '关闭', event: 'close', class: 'xa-bg-red'}]"></xa-buttons>
     </xa-popup-bottom>
     <div>内容高度({{number}}): <input type="range" v-model.number="number" min="5" max="50"></div>
     <div>副标题：<input type="text" v-model.trim="subTitle"></div>
@@ -22,7 +22,7 @@ export default {
   data () {
     return {
       isShowPopup: false,
-      number: 10,
+      number: 50,
       subTitle: '这是副标题的文字',
       preventHide: false
     }
