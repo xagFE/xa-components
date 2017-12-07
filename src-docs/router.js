@@ -35,6 +35,15 @@ export const routes = [
     }
   },
   {
+    path: '/popupConfirm',
+    name: 'popupConfirm',
+    component: require('@/components/popupConfirm'),
+    meta: {
+      title: 'popupConfirm',
+      desc: '底部确认框'
+    }
+  },
+  {
     path: '/cells',
     name: 'cells',
     component: cells,

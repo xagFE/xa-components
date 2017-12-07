@@ -3,6 +3,7 @@ import './styles/common.css'
 import xaCopyright from './components/copyright'
 import xaPopup from './components/popup'
 import xaPopupBottom from './components/popupBottom'
+import xaPopupConfirm from './components/popupConfirm'
 import { cells as xaCells, cell as xaCell } from './components/cells'
 import xaRipple from './components/ripple'
 import xaCircular from './components/circular'
@@ -26,6 +27,7 @@ const components = {
   xaCopyright,
   xaPopup,
   xaPopupBottom,
+  xaPopupConfirm,
   xaCells,
   xaCell,
   xaRipple,

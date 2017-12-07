@@ -8,7 +8,7 @@
           <xa-cell v-if="province" @click.native="step = 2" title="选择市" arrow right>{{ city || '请选择' }}</xa-cell>
           <xa-cell v-if="city && countys.length" @click.native="step = 3" title="选择县" arrow right>{{ county || '请选择' }}</xa-cell>
         </xa-cells>
-        <xa-cells v-show="step !== 0">
+        <xa-cells v-show="step !== 0" style="margin-top: 0;">
           <xa-cell @click.native="onItemClick(item)" v-for="(item, index) in currentItems" :arrow="!!item.children" :key="index">
             <span slot="title" :class="{['xa-txt-' + theme]: item === currentText }">{{item}}</span>
           </xa-cell>
