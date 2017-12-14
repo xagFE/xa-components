@@ -1,6 +1,6 @@
 {
   "name": "xa-components",
-  "version": "0.1.14",
+  "version": "0.1.15",
   "description": "基于Vuejs 2.0的常用组件库",
   "author": "lijixiang <820396305@qq.com>",
   "main": "dist/index.js",

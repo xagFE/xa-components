@@ -1,14 +1,14 @@
 <template>
-  <popup from="bottom" :prevent-hide="preventHide" class="popup-bottom" shadow v-model="isShowPopup">
-      <div v-if="title" class="popup-bottom-title" :class="{sub: subTitle}">
-          <div class="title" :class="[red ? 'xa-txt-red' : '']">{{ title }}</div>
-          <div v-if="subTitle" class="subtitle" :class="[red ? 'xa-txt-red' : '']">{{ subTitle }}</div>
-      </div>
-      <slot name="title"></slot>
-      <div class="popup-bottom-content" :class="{hasfooter: $slots.footer}">
-          <slot></slot>
-      </div>
-      <slot name="footer"></slot>
+  <popup from="bottom" :scroller="$refs.scroller" :prevent-hide="preventHide" class="popup-bottom" shadow v-model="isShowPopup">
+    <div v-if="title" class="popup-bottom-title" :class="{sub: subTitle}">
+      <div class="title" :class="[red ? 'xa-txt-red' : '']">{{ title }}</div>
+      <div v-if="subTitle" class="subtitle" :class="[red ? 'xa-txt-red' : '']">{{ subTitle }}</div>
+    </div>
+    <slot name="title"></slot>
+    <div ref="scroller" class="popup-bottom-content" :class="{hasfooter: $slots.footer}">
+      <slot></slot>
+    </div>
+    <slot name="footer"></slot>
   </popup>
 </template>
 
