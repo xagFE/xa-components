@@ -4,7 +4,7 @@
 
 ## Document
 
-[在线文档](https://xairFE.github.io/xa-components/docs)
+[在线文档](https://xagFE.github.io/xa-components/docs)
 
 ![preview qrcode](src-docs/assets/preview_qrcode.png)
 
